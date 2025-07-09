@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Confessions</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Anonymous Confessions</h1>
+    <ul>
+        {% for confession in confessions %}
+            <li>
+                <p>{{ confession[0] }}</p>
+                <small><em>{{ confession[1] }}</em></small>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Submit</a>
+</body>
+</html>
+
